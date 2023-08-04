@@ -1,14 +1,14 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Order from './pages/Order';
-import Catering from './pages/Catering';
+// import Order from './pages/Order';
+// import Catering from './pages/Catering';
 import Menu from './pages/Menu';
 import Footer from './components/Footer';
-import Product from './pages/Product';
+// import Product from './pages/Product';
 import Login from './pages/Login';
 import Register from './pages/Register';
 // import { motion } from 'framer-motion';

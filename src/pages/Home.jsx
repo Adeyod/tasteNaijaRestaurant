@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { foodByCategory, foodImages } from '../components/Images';
-import { Slide } from 'react-slideshow-image';
+
 import 'react-slideshow-image/dist/styles.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';

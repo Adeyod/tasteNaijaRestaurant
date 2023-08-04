@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { foodByCategory, foodImages } from '../components/Images';
-import { Product } from './Product';
+import { foodByCategory } from '../components/Images';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -9,15 +7,15 @@ const Menu = () => {
   const { ref, inView } = useInView({ threshold: 0.011 });
   const animation = useAnimation();
 
-  const pasteriesVariant = {
-    hidden: {
-      x: -100,
-    },
-    visible: {
-      x: 0,
-      transition: { duration: 2 },
-    },
-  };
+  // const pasteriesVariant = {
+  //   hidden: {
+  //     x: -100,
+  //   },
+  //   visible: {
+  //     x: 0,
+  //     transition: { duration: 2 },
+  //   },
+  // };
 
   useEffect(() => {
     console.log(inView);

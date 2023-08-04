@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { motion, useAnimation, inView } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const About = () => {
@@ -21,15 +21,15 @@ const About = () => {
     }
   }, [inView]);
 
-  const pVariant = {
-    hidden: {
-      x: '-100vw',
-    },
-    visible: {
-      x: 0,
-      transition: { duration: 2 },
-    },
-  };
+  // const pVariant = {
+  //   hidden: {
+  //     x: '-100vw',
+  //   },
+  //   visible: {
+  //     x: 0,
+  //     transition: { duration: 2 },
+  //   },
+  // };
 
   return (
     <div className="">
