@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 85px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@import 'react-slideshow-image/dist/styles.css';
+
+input {
+  border: 1px solid;
+  border-radius: 5px;
+  height: 50px;
+}
+
+input::placeholder {
+  padding-left: 10px;
+}
+
+textarea {
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+textarea::placeholder {
+  padding: 30px;
+}
+
+.contact-head {
+  color: #dc042a;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.sub-head,
+label {
+  font-weight: 900;
+}
+
+.Navbar {
+  z-index: 999;
+}
+
+.heading {
+  color: black;
+  font-weight: 800;
+  text-decoration: underline;
+  font-size: large;
+  margin: 10px 0;
+}
+
+.heading > p {
+  margin-bottom: 10px;
+}
+
+.sub-head1 {
+  font-weight: bold;
+}
