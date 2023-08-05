@@ -18,15 +18,15 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/" exact element={<Home />} />
+        <Route path="/about" exact element={<About />} />
         {/* <Route path="/catering" element={<Catering />} /> */}
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/menu" exact element={<Menu />} />
+        <Route path="/contact" exact element={<Contact />} />
         {/* <Route path="/order" element={<Order />} /> */}
         {/* <Route path="/product" element={<Product />} /> */}
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/register" exact element={<Register />} />
+        <Route path="/login" exact element={<Login />} />
       </Routes>
       <Footer />
     </div>
