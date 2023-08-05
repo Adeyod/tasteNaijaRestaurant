@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import About from './pages/About';
@@ -15,21 +15,21 @@ import Register from './pages/Register';
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/about" exact element={<About />} />
         {/* <Route path="/catering" element={<Catering />} /> */}
         <Route path="/menu" exact element={<Menu />} />
-        <Route path="/contact" exact element={<Contact />} />
+        <Route path="contact" exact element={<Contact />} />
         {/* <Route path="/order" element={<Order />} /> */}
         {/* <Route path="/product" element={<Product />} /> */}
         <Route path="/register" exact element={<Register />} />
         <Route path="/login" exact element={<Login />} />
       </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 
