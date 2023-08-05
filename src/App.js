@@ -18,15 +18,15 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/about" exact element={<About />} />
-        {/* <Route path="/catering" element={<Catering />} /> */}
-        <Route path="/menu" exact element={<Menu />} />
-        <Route path="contact" exact element={<Contact />} />
-        {/* <Route path="/order" element={<Order />} /> */}
-        {/* <Route path="/product" element={<Product />} /> */}
-        <Route path="/register" exact element={<Register />} />
-        <Route path="/login" exact element={<Login />} />
+        <Route exact path="/" Component={Home} />
+        <Route exact path="/about" Component={About} />
+        {/* <Route path="/catering" Component={<Catering />} /> */}
+        <Route exact path="/menu" Component={Menu} />
+        <Route exact path="/contact" Component={Contact} />
+        {/* <Route path="/order" Component={<Order />} /> */}
+        {/* <Route path="/product" Component={<Product />} /> */}
+        <Route exact path="/register" Component={Register} />
+        <Route exact path="/login" Component={Login} />
       </Routes>
       <Footer />
     </BrowserRouter>
