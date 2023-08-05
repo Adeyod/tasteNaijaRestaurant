@@ -112,11 +112,8 @@ const Contact = () => {
                 id=""
                 cols="30"
                 rows="10"
-                placeholder="Your message"
                 required
-              >
-                Message Us
-              </textarea>
+              ></textarea>
             </div>
 
             <button
