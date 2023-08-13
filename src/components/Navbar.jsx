@@ -37,7 +37,7 @@ const Navbar = () => {
       <div
         className={`${
           toggle
-            ? 'flex flex-col absolute bg-primary top-[65px] right-0 py-8 px-20 gap-4 Navbar'
+            ? 'flex flex-col md:hidden absolute bg-primary top-[65px] right-0 py-8 px-20 gap-4 Navbar'
             : 'hidden'
         }`}
         onClick={() => setToggle(!toggle)}
